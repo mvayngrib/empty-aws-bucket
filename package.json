@@ -3,6 +3,7 @@
   "version": "1.0.10",
   "description": "Empty an Amazon S3 Bucket",
   "main": "index.js",
+  "bin": "./cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
