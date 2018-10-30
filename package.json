@@ -22,7 +22,10 @@
     "url": "https://github.com/sabrehagen/empty-s3-bucket/issues"
   },
   "homepage": "https://github.com/sabrehagen/empty-s3-bucket#readme",
-  "dependencies": {
+  "devDependencies": {
+    "aws-sdk": "^2.132.0"
+  },
+  "peerDependencies": {
     "aws-sdk": "^2.132.0"
   }
 }
