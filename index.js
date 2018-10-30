@@ -1,11 +1,6 @@
-const aws = require('aws-sdk');
-const s3 = new aws.S3();
 
-const emptyBucket = async (Bucket, options) => {
-
-  if (options) {
-    aws.config.update(options);
-  }
+const emptyBucket = async ({ s3, bucket }) => {
+  const Bucket = bucket
 
   // if AWS SDK debugging is enabled, log our actions
   const debug = (...args) => {

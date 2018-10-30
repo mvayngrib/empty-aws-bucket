@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-const empty = require('./');
-const bucket = process.argv[2];
+const AWS = require('aws-sdk')
+const s3 = new AWS.S3()
+const empty = require('./')
+const bucket = process.argv[2]
 
-empty(bucket).catch(console.error);
+empty({ s3, bucket }).catch(console.error)
